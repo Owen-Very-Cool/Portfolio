@@ -1,0 +1,209 @@
+#logo{
+    z-index: 1;
+    color: #f2f2f2;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 2em;
+    position: fixed;
+    left: 20px;
+    top: 15px;
+    user-select: none;
+}
+#logo:hover{
+    cursor: pointer;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #02000D;
+    overflow: hidden;
+}
+#background{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+h3{
+    z-index: 1;
+    text-align: center;
+    font-family: 'Major Mono Display', monospace;
+    position: fixed;
+    color: white;
+    font-weight: 100;
+    font-size: 1em;
+    width: 150px;
+    height: 10px;
+    user-select: none;
+    padding-bottom: 10px;
+}
+h3:hover{
+    cursor: pointer;
+    border-bottom: solid white 1px;
+}
+h4 a{
+    z-index: 1;
+    font-family: 'Major Mono Display', monospace;
+    position: fixed;
+    color: white;
+    font-weight: 100;
+    font-size: 0.8em;
+    text-decoration: none;
+    user-select: none;
+}
+#blog{
+    top: 91%;
+    left: 93%;
+}
+#report{
+    top: 91%;
+    left: 93%;
+    margin-top: 20px;
+}
+h4 a:hover{
+    border-bottom: solid white 1px;
+}
+#process{
+    transform: rotate(-90deg);
+    top: 50%;
+    margin-top: -10px;
+    margin-left: -50px;
+    /*Effectively a 20px margin from the left*/
+}
+#learn{
+    top: 91%;
+    left: 50%;
+    margin-left: -75px;
+    line-height: 20px;
+}
+#work{
+    transform: rotate(90deg);
+    top: 50%;
+    left: 100%;
+    margin-top: -10px;
+    margin-left: -102px;
+}
+
+#homePage{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+}
+#homePage h1, #homePage h2{
+    color: white;
+    font-family: 'Share Tech Mono', monospace;
+    width: 100%;
+    text-align: center;
+    margin-top: 20%;
+    font-size: 2.5em;
+}
+#homePage h2{
+    margin-top: 0;
+    font-size: 1em;
+}
+
+#processPage{
+    position: absolute;
+    top: 0%;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+}
+#processPage h1{
+    color: white;
+    font-family: 'Share Tech Mono', monospace;
+    margin-left: 15%;
+    margin-top: 10%;
+    font-size: 2.5em;
+}
+
+#workPage{
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 100%;
+    height: 100%;
+}
+#workPage h1{
+    color: white;
+    font-family: 'Share Tech Mono', monospace;
+    margin-left: 15%;
+    margin-top: 10%;
+    font-size: 2.5em;
+}
+
+#learnPage{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+#learnPage h1{
+    color: white;
+    font-family: 'Share Tech Mono', monospace;
+    margin-left: 15%;
+    margin-top: 10%;
+    font-size: 2.5em;
+}
+.stepNavigation{
+    position: absolute;
+    top: 77%;
+    left: 50%;
+    height: 55px;
+    margin-left: -400px;
+    width: 800px;
+    text-align: center;
+}
+.stepNavigation ul li{
+    color: white;
+    font-family: 'Major Mono Display', monospace;
+    list-style: none;
+    float: left;
+    font-weight: 100;
+    font-size: 0.7em;
+    margin: 0px 10px 0px 10px;
+    text-align: center;
+    width: 100px;
+}
+.circle{
+    border: solid #f4f4f4 1px;
+    border-radius: 100%;
+    width: 30px;
+    height: 30px;
+    margin: 0 auto 10px;
+}
+.stepNavigation ul li:hover{
+    text-shadow: 0.5px 0.5px white;
+    cursor: pointer;
+}
+.stepNavigation ul li:hover .circle{
+    background-color: #f4f4f4;
+}
+.activeCircle{
+    background-color: #f4f4f4;
+}
+.stepNavigation ul li:hover .content{
+    text-shadow: none;
+}
+.content{
+    font-family: 'Share Tech Mono', monospace;
+    position: absolute;
+    top: -300px;
+    font-size: 1.1em;
+    color: white;
+    width: 110%;
+    margin-left: -70px;
+    visibility: hidden;
+}
+.content img{
+    float: right;
+    margin-left: 10px;
+    width: 200px;
+    opacity: 0.7;
+}
+.activeContent{
+    visibility: visible;
+}

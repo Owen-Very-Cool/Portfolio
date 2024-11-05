@@ -1,0 +1,139 @@
+<!DOCTYPE HTML>
+<html lang = "en">
+    <head>
+        <meta charset="utf-8">
+        <title>Owen Peries - Rickety Ship Simulator</title>
+        <!-- FONTS USED -->
+        <!-- Major Mono Display. Collected from google fonts at: https://fonts.google.com/specimen/Major+Mono+Display -->
+        <!-- Roboto Mono. Collected from google fonts at: https://fonts.google.com/specimen/Roboto+Mono -->
+        <!-- Share Tech Mono. Collected from google fonts at: https://fonts.google.com/specimen/Share+Tech+Mono -->
+        <link href="https://fonts.googleapis.com/css?family=Major+Mono+Display|Roboto+Mono|Share+Tech+Mono&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+    </head>
+    <header>
+        <div id="logo">|OP|</div>
+    </header>
+    <body>
+
+        <h3 id="process">process</h3>
+        <h3 id="learn">learn more</h3>
+        <h3 id="work">my work</h3>
+        <h4><a id="blog" href = "https://deco3850.uqcloud.net/students/s4485241">blog</a></h4>
+        <h4><a id="report" href = "placeandspace.pdf">report</a></h4>
+        <div id="background"></div>
+
+        <div id="homePage">
+            <h1>RICKETY SHIP SIMULATOR</h1>
+            <h2>owen peries - portfolio</h2>
+        </div>
+
+        <div id="processPage">
+            <div class="stepNavigation">
+                <ul>
+                    <li><div class="circle"></div>concept</li>
+                    <div class="content">
+                        <img src="images/kramer/initial-poster.png" alt="Initial Concept Design - Image Credit: Tom Kramer, 2019">
+                        As with all good projects, Rickety Ship Simulator began in the ideation phase. We were tasked with creating a playful, physical interaction that facilitated shared experiences. Leading from Tom’s initial concept, we decided on creating a team-building experience to help inexperienced teams gain communication skills. Since our primary goal was to help our users learn, we started with research into the values of a good team – and how we can promote them through connected play. This meant looking at articles on teambuilding, statistics to help us justify and refine our userbase, and even some first-hand experience. For more in-depth information on the ideation phase, I’d recommend checking out my report or blog posts.                    
+                    </div>                        
+                    <li><div class="circle"></div>roles</li>
+                    <div class="content">
+                        After some refinement, we decided that the game would take place with four players, each filling in their own role. Each role is unique and revolves around working with other people on the ship. The purpose of this was to create an experience where all players were individually valued. Each member has their own strengths and weaknesses, and must find a way to work together to achieve a common goal. Unlike other similar experiences like escape rooms, this approach is more parallel with a real-world situation. This should allow players to translate what they learn into their future teamwork. For more information on the game’s roles, check the learn more section below.                    
+                    </div>
+                    <li><div class="circle"></div>interactions</li>
+                    <div class="content">
+                        <img src="images/kramer/interactions.png" alt="Interaction Loops - Image Credit: Tom Kramer, 2019">
+                        While the roles must each maintain individuality, it’s also important that they all mesh together in a meaningful way. To achieve this, we created gameplay loops. These gameplay loops represented the various series of interactions that players would have to complete. We noticed many small loops, but mainly focused on one core gameplay loop, and one major loop. These were resource collection and system repair. By focussing on these interactions, we were able to create an experience where every player had a reason to communicate with another player at any given time.                    
+                    </div>   
+                    <li><div class="circle"></div>prototyping</li>
+                    <div class="content">
+                        <img src="images/dong/prototype.png" alt="Early Prototype - Image Credit: Justin Dong 2019">
+                        Once a plan had been put in place for our player-player interactions, we needed to make sure that our physical interactions were also up to scratch. In order to this, we created a series of prototypes and completed an empirical evaluation. Through A/B testing we were able to determine the most effective ways for our interactions to be made. This involved running two methods against each-other (Such as Kinect-based controls and crank-based controls) to find out which was more intuitive and entertaining. The findings of these evaluations settled decisions for the product, and caused us to completely redevelop the concept for one of our roles. More information on testing can be found in my week 6 blog post.                    
+                    </div>   
+                    <li><div class="circle"></div>product</li>
+                    <div class="content">
+                        <img src="images/losh/exhibit.jpg" alt="Final Exhibit - Image Credit: Judit Losh 2019">
+                        With our plan set in motion, exhibit preparation was always a problem. Given the scope of our project, development took up a large amount of our time. Since fundamentally our concept relied on all four sections working together, it was important for each system to meet a certain level of functionality. Due to this, we worked towards completing our MVP as soon as possible. To do this, we each specialised in certain sections. Justin worked solely on the unity engine side of things, Mikaela worked on programming our microcontrollers, Tom mainly designed and put together the physical build, and I set up the Kinect, wii fit board, and worked on the unity game with a focus on interfacing with the many inputs our game received.                    
+                    </div>   
+                    <li><div class="circle"></div>evaluation</li>
+                    <div class="content">
+                        <img src="images/losh/team.jpg" alt="Team Photo - Image Credit: Judith Losh 2019">
+                        When it comes to function alone, I think we were able to accomplish a lot as a team. Sectioning things off was a huge help in getting work completed fast, but as we approached the deadline and bug-fixing became a priority, a need for more communication began to stall our progress. Furthermore, at showcase it became clear that we hadn’t put enough thought into the social aspects of our physical design (More on this in the learn more section). If more time had been put together brainstorming about this earlier on, I think the final product would have been far more successful.                  
+                    </div>
+                </ul>
+            </div>
+        </div>
+
+        <div id="workPage">
+            <div class="stepNavigation">
+                <ul>
+                    <li><div class="circle"></div>pilot</li>
+                    <div class="content">
+                        <img src="images/kramer/fit-board.jpg" alt="Pilot System - Image Credit: Tom Kramer 2019">
+                        In the early stages of our project, there was a lot of uncertainty regarding whether we would be able to achieve our MVP before the end of semester. To investigate this plausibility, I looked into using a Wii Fit board for our pilot role. Originally I made use of a program online which allowed me to translate movement on the wii board into button presses. This allowed us to build an MVP with haste, however due to the static nature of button inputs, it didn’t feel particularly responsive. To solve this, I investigated the code for the program I was using, and found the name of the library it used. I then used this to create a new program that got the raw values from the board, and sent them to a server being run through the main unity game. This allowed me to make a far more responsive control scheme.
+                    </div>                        
+                    <li><div class="circle"></div>gunner</li>
+                    <div class="content">
+                        <img src="images/losh/gunner.jpg" alt="Gunner System - Image Credit: Judith Losh 2019">
+                        In conjunction with the pilot system, I also worked on completing a gunner system for an early MVP. This was done using the Xbox 360 Kinect. After a long, coffee filled night I managed to get control over a reticle on a screen in our unity game. This was originally used to aim and fire a projectile weapon, however through testing I found it was far too hard to successfully aim and fire a single projectile. To fix this, I made it so the ship would fire a constant laser. This laser would either shoot off into space, or stop at an asteroid. Instead of destroying asteroids in a number of hits, holding the beam on an asteroid slowly depleted its health. This meant users only needed to focus on aiming in the right place for a long enough time, vastly improving their experience.                     </div>   
+                    <li><div class="circle"></div>engineer</li>
+                    <div class="content">
+                        <img src="images/kramer/engineer.jpg" alt="Engineer System - Image Credit: Tom Kramer 2019">
+                        The engineer role focussed on moving resources to different systems on the ship. In order to set this up, I needed to learn how unity could interface with an Arduino. In doing this, I was able to make it so the game would respond to the inputs from the engineer’s two microcontrollers, and sent relevant information back. The problem with this connection was that the information being read would lag the game on any frame it was called. This caused the framerate to stutter uncontrollably. In order to amend this, I split up the reads into pieces, and completed them over time. This meant that a full read would happen over the course of half a second, allowing the game to maintain a constant framerate. The only problem that arose from this was when one of the arduinos had been set to send info every frame. This caused it to send far faster than the game received, and if left unchecked, would have caused significant desync between the game and microcontrollers.                    </div>   
+                    <li><div class="circle"></div>intel</li>
+                    <div class="content">
+                        <img src="images/losh/intel.jpg" alt="Intel System - Image Credit: Judith Losh 2019">
+                        The intel role was where I started focusing on setting up the game’s repair loop. This involved sending a break code to the engineer’s microcontroller, and causing a disturbance for the players in some way. This damage would persist until the correct repair code was submitted, at which point it would return the game to normal and add score. To do this I coded a series of 7 breaks, and ways to fix them. The problem with this system was that not enough time was put into testing. Ironically enough, two of the break cases broke during exhibit. It’s unclear whether this was the fault of software or hardware, but these problems could have been solved if we had put time away to individually test each case in advance.                    </div>   
+                    <li><div class="circle"></div>bug-fixing</li>
+                    <div class="content">
+                        Bug fixing was easily the most painful part of this project. As the other member working on the unity project hadn’t completed design studio 2, they hadn’t learned how to deal with merge conflicts correctly. This meant large amounts of code were accidentally deleted or broken, leading to many parts of the system being broken only days before showcase. Furthermore, since my job had been so broad on this project, I was the only one who understood a large amount of the broken code. This meant that most of the game’s bug-fixing was delegated to me. As the interface between Arduino and unity was not always communicated well, this sometimes meant rewriting entire sections that had been done in contrary ways.                     </div>   
+                    <li><div class="circle"></div>evaluation</li>
+                    <div class="content">
+                        While everyone completed work, I think my job would have been a lot easier if I had communicated more, and looked into bug-fixing earlier. Had I noticed any of the issues in the system earlier on, I would not have needed to rewrite as much. I made the bold that assumption that just because something worked when I coded it meant it work later too. This was dumb. In the future, I’ll need to make sure I set up a test suite early on. While it will require a greater investment of time early on, the bugs it prevents will be far more valuable.                    </div>
+                </ul>
+            </div>            
+        </div>
+
+        <div id="learnPage">
+            <div class="stepNavigation">
+                <ul>
+                    <li><div class="circle"></div>purpose</li>
+                    <div class="content">
+                        There’s always space for improvement. Rickety Ship Simulator is a team-building game designed to help inexperienced groups develop their skills and work as a cohesive unit. Players work together in the same physical space to keep their ship running, and gather a high score. The game is made in a way where each player has a unique role with strengths and weaknesses. To overcome these, team members must learn to rely on one-another, and communicate their own situation for the good of the rest of their crew.                   
+                    </div>
+                    <li><div class="circle"></div>instructions</li>
+                    <div class="content">
+                        To play the game, players need to work together to collect as many points as possible. This can be done by mining high value asteroids, completing repairs, and for the bravest crews - taking on the dreaded dreadnought. Four players will each take on a unique role to test their skills in a 15 minute dash through space. Avoiding enemies, finding resources and keeping the ship steady are all impossible without communication and strategy. Rickety Ship Simulator is sure to turn any group into an experienced team.    
+                    </div>
+                    <li><div class="circle"></div>pilot</li>
+                    <div class="content">
+                        <img src="images/kramer/fit-board.jpg" alt="Pilot System - Image Credit: Tom Kramer 2019">
+                        The ship’s pilot oversees movement through space. They control the orientation of the ship by leaning in a direction with a Wii Fit board, and increase the thrust of the system with a slider. While this role gives the player a lot of control over the ship, the pilot still has no real way of navigating alone. To collect resources and run from enemies, they will need to communicate and work with the rest of the crew. This helps the player bond with other members, while gaining experience working in a fast-paced team environment.
+                    </div>                        
+                    <li><div class="circle"></div>gunner</li>
+                    <div class="content">
+                        <img src="images/losh/gunner.jpg" alt="Gunner System - Image Credit: Judith Losh 2019">
+                        The gunner’s role is to take out incoming asteroids and enemies by firing a laser. This laser is a constant beam that is aimed using an Xbox 360 Kinect. The problem with this is that their aim is still directly linked to the ship’s orientation. To get a clear shot, intel will need to direct the crew towards a target, then the pilot will have to navigate to it and hold the ship steady. Since the gunner’s aim is so dependent on other roles, they will be forced to communicate with the rest of the crew.
+                    </div>   
+                    <li><div class="circle"></div>engineer</li>
+                    <div class="content">
+                        <img src="images/kramer/engineer.jpg" alt="Engineer System - Image Credit: Tom Kramer 2019">
+                        The crew’s engineer focusses on the distribution of energy through the ship, and the repair of damaged systems. Resources are displayed with LEDs, and can be distributed by using a fuel pump. As resources are limited, the engineer need to communicate with the crew to determine who needs power the most. Furthermore, when something on the ship breaks, the engineer will need to input an appropriate sequence into their switchboard. The only problem is that only intel knows which switch on the board is which. Thus, the engineer and intel will need to solve a communication-based puzzle together to repair the ship.
+                    </div>   
+                    <li><div class="circle"></div>intel</li>
+                    <div class="content">
+                        <img src="images/losh/intel.jpg" alt="Intel System - Image Credit: Judith Losh 2019">
+                        Intel is focused on providing tactical information to the crew, and diagnosing ship problems. The player has access to a full view of the game’s map. This allows them to keep track of valuable resources, and dangerous enemies. They need to work with the gunner and pilot to maximise the points available at any time. Secondly, intel has the layout for the engineer’s switchboard. This means that whenever something on the ship breaks, intel and the engineer must solve a communication-based puzzle to repair it. 
+                    </div>   
+                </ul>
+            </div>
+        </div>
+    </body>
+    
+    <!-- THIRD PARTY LIBRARIES USED -->
+    <!-- Jquery. Collected from : https://api.jquery.com/ -->
+    <!-- Particles.js. Collected from : https://vincentgarreau.com/particles.js/ -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="js/particle-config.js"></script>
+    <script src="js/script.js"></script>
+</html>
